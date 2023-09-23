@@ -1,0 +1,136 @@
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ========= (COLORS) ========= */
+
+    --DARK-COLOR: rgb(24, 24, 24);
+    --WHITESMOKE: whitesmoke;
+
+
+    /* ========= (FONT FAMILY) ========= */
+
+    --MAIN-FONT: 'Roboto Condensed', sans-serif;
+}
+
+    /* ========= (BODY STYLES) ========= */
+
+
+body {
+    font-family: var(--MAIN-FONT);
+    background-color: var(--DARK-COLOR);
+    color: var(--WHITESMOKE);
+    margin-top: 8rem;
+}
+
+    /* ========= (HEADER STYLES) ========= */
+
+
+header {
+    background-color: var(--WHITESMOKE);
+    display: flex;
+    justify-content: center;
+    opacity: .9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    text-align: end;
+}
+
+header a {
+    color: var(--DARK-COLOR);
+    text-decoration: none;
+    font: 2rem var(--MAIN-FONT)
+}
+
+
+/* ========= (ARTICLE) ========= */
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article a {
+    color: var(--WHITESMOKE);
+    font-size: 1.5rem;
+}
+
+.title-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+section {
+    width: 100%;
+    max-width: 1440px;
+}
+
+.junior-challenges, .newbie-challenges {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--WHITESMOKE);
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.challenge-container, .challenge-title-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem 0;
+}
+
+table {
+    width: 100%;
+}
+
+thead, tbody, th {
+    border: 3px solid var(--WHITESMOKE);
+    border-collapse: collapse;
+}
+
+tr, td {
+    border: 1px solid var(--WHITESMOKE);
+    border-collapse: collapse;
+}
+
+th {
+    padding: .5rem;
+    font-size: 1.5rem;
+    
+}
+
+li {
+    /* border-bottom: 2px dotted var(--WHITESMOKE) */
+    padding-left: 1rem;
+}
+
+
+.challenge-date p {
+    font-size: 1.5rem;
+    text-align: end;
+    border-bottom: 2px dotted var(--WHITESMOKE);
+}

@@ -1,0 +1,3 @@
+Stats Preview challenge from Frontend Mentor. It's been a lot of fun recreating those designs and I feel I'm slowly learning, so thank you.
+
+The thing that I struggled in this challenge was to change the color of the image(it is originally a monochrome image) to purple. I used the opacity to achieve this but I think there is a better way. I heard that you can do this with the Filter function I wasn't able to figure it out. Any help with that and how to write better code overall would be much appreciated.

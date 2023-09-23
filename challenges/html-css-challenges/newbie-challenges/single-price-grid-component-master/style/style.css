@@ -1,0 +1,210 @@
+
+/* GOOGLE FONT IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* VARIABLES */
+
+:root {
+    /* COLORS */
+    --BG-COLOR: hsl(218, 22%, 67%);
+    --BG-CARD-COLOR: hsl(204, 43%, 93%);
+    --CYAN-COLOR: hsl(179, 62%, 43%);
+    --BRIGHT-YELLOW-COLOR: hsl(71, 100%, 32%);
+    --GRAY-FONT: rgba(255, 255, 255, 0.6);
+
+    /* PADDING */
+    --MARGIN-PADDING: 2rem;
+    --MOBILE-PADDING: 1.5rem;
+
+    /* BORDER-RADIUS */
+    --BORDER-RADIUS: .5rem;
+
+}
+
+/* BODY STYLES */
+
+body {
+    font-family: 'Karla', sans-serif;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: var(--BG-COLOR);
+}
+
+/* SINGLE PRICE GRID */
+
+article {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: var(--MARGIN-PADDING);
+    background-color: var(--BG-CARD-COLOR);
+    border-radius: var(--BORDER-RADIUS);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* GRID HEAD */
+
+.grid-header {
+    margin: 2rem;
+    grid-column: 1 / 3;
+}
+
+h1 {
+    color: var(--CYAN-COLOR);
+    padding: .5rem 0;
+}
+
+.grid-header h2 {
+    margin: .5rem 0;
+    color: var(--BRIGHT-YELLOW-COLOR);
+    font-size: 1rem;
+}
+
+.grid-header p {
+    font-size: .8rem;
+    margin: .5rem 0;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* MONTHLY SUBSCRIPTION CARD */
+
+.subscription {
+    padding: 2.5rem var(--MARGIN-PADDING);
+    background-color: var(--CYAN-COLOR);
+    border-radius: 0 0 0 var(--BORDER-RADIUS);
+    color: white;
+}
+
+.subscription h2 {
+    font-size: 1.2rem;
+}
+
+.price {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: .8rem;
+    margin: 1rem 0;
+}
+
+.price:hover, .price:focus {
+    cursor: pointer;
+}
+
+.price p {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.access {
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.6);
+    padding: .5rem 0 1rem;
+}
+
+.price h3 {
+    font-size: 2rem;
+}
+
+.sign-up-button {
+    margin: 1rem 0 0;
+    padding: 1rem 6rem;
+    white-space: nowrap;
+    background-color: var(--BRIGHT-YELLOW-COLOR);
+    font-weight: bold;
+    border: none;
+    border-radius: .3rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow .5s, background-color .5s;
+}
+
+.sign-up-button:hover, .sign-up-button:focus {
+    background-color: hsl(71, 95%, 43%);
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.sign-up-button:active {
+    background-color:hsl(71, 100%, 77%);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* WHY US CARD */
+.why-us {
+    padding: var(--MARGIN-PADDING);
+    background-color:hsl(179, 47%, 52%);
+    border-radius: 0 0 var(--BORDER-RADIUS) 0;
+}
+
+.why-us h2 {
+    margin: .5rem 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.why-us p {
+    font-size: .9rem;
+    line-height: 1.4rem;
+    color: var(--GRAY-FONT);
+}
+
+h1:hover, h2:hover, h1:focus, h2:focus {
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERIES */ 
+
+@media (max-width: 700px) {
+    article {
+        display: grid;
+        grid-template-columns: 300px;
+    }
+    
+    section {
+        display: grid;
+        
+
+    }
+    
+    .grid-header {
+        display: grid;
+        grid-column: 1 / 1;
+        place-content: center;
+        margin: var(--MOBILE-PADDING);
+    }
+
+
+    .subscription {
+        border-radius: 0;
+        padding: var(--MOBILE-PADDING);
+    }
+
+    .price {
+        margin: .5rem 0;
+    }
+
+    .sign-up-button {
+        margin-bottom: var(--MOBILE-PADDING);
+    }
+
+    .why-us {
+        border-radius: 0 0 var(--BORDER-RADIUS) var(--BORDER-RADIUS);
+        padding: var(--MOBILE-PADDING);
+    }
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; color: white}
+.attribution a { color: hsl(228, 45%, 44%); }

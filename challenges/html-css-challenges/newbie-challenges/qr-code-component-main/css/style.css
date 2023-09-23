@@ -1,0 +1,59 @@
+
+/* Google font Import */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&family=Montserrat&family=Outfit&family=Roboto&display=swap');
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* WEB PAGE VERSION */
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    font-family: "Outfit", sans-serif;
+}
+
+section {
+    background-color: white;
+    border-radius: 1rem;
+    margin: 20px;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.205);
+}
+
+.qr-code {
+    border-radius: 1.3rem;
+    padding: 10px;
+}
+
+.qr-information-div {
+    width: 260px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.qr-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0 15px;
+    color: hsl(218, 44%, 22%)
+}
+
+.qr-description {
+    font-size: 0.9rem;
+    color: hsl(220, 15%, 55%);
+    margin: 0 15px;
+    padding: 10px 0;
+    
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

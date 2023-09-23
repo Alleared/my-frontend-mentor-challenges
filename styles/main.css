@@ -1,0 +1,142 @@
+
+/* RESET */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ========= (COLORS) ========= */
+
+    --DARK-COLOR: rgb(24, 24, 24);
+    --WHITESMOKE: whitesmoke;
+
+
+    /* ========= (FONT FAMILY) ========= */
+
+    --MAIN-FONT: 'Roboto Condensed', sans-serif;
+}
+
+    /* ========= (BODY STYLES) ========= */
+
+
+body {
+    font-family: var(--MAIN-FONT);
+    background-color: var(--DARK-COLOR);
+    color: var(--WHITESMOKE);
+    margin-top: 8rem;
+}
+
+    /* ========= (HEADER STYLES) ========= */
+
+
+header {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem
+
+}
+
+a {
+    color: var(--DARK-COLOR);
+    text-decoration: none;
+    font: 2rem var(--MAIN-FONT)
+}
+
+
+/* ========= (ARTICLE) ========= */
+
+article {
+    display: grid;
+    place-content: center;
+
+}
+
+.title-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 1rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    border: 3px solid var(--WHITESMOKE);
+    margin: 1rem;
+    max-width: 1440px;
+}
+
+/* ========= (CHALLENGES) ========= */
+
+.challenges-container, .about-me-container {
+    border: 1px dotted var(--WHITESMOKE);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.challenges-container a {
+    color: var(--WHITESMOKE);
+    font-size: 1.5rem;
+}
+
+.title-div {
+    margin: 1rem 0;
+}
+
+
+/* ========= (ABOUT ME) ========= */
+
+.about-me-div {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.personal-info {
+    width: 100%;
+}
+
+.my-profile-pic-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.my-profile-pic {
+    width: 100px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+
+/* MEDIA QUERIES */
+
+/* MEDIUM */
+@media (max-width: 700px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+}

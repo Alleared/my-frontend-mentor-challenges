@@ -1,0 +1,1 @@
+Frontend Mentor Challenge coded by Alleared using pure HTML and CSS. The Background is not perfect again, but it is a huge improvement from the last one. Like always, any feedback is welcome.
