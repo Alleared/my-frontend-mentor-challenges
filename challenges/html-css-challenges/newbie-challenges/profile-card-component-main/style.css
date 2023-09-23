@@ -1,0 +1,135 @@
+
+/* GOOGLE FONT IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || VARIABLES */ 
+
+:root {
+
+    /* COLORS */
+    --FONT-COLOR: hsl(229, 23%, 23%);
+    --BG-COLOR: hsl(185, 75%, 39%);
+    --DESCRIPTION-COLOR: Hsl(227, 10%, 46%);
+    
+}
+
+/* MAIN STYLES */
+
+html {
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--BG-COLOR);
+    background-image: url(/images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 45vh right 45vw, top 45vh left 45vw;
+    background-attachment: fixed;
+}
+
+.background-pic {
+    border-radius: 1rem 1rem 0 0;
+}
+
+/* CARD */
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    background-color: white;
+    position: relative;
+    border-radius: 1rem;
+}
+
+/* CARD BACKGROUND IMAGE */
+
+.profile-pic {
+    position: absolute;
+    top: 22%;
+    right: 35%;
+    border-radius: 50%;
+    border: 5px solid white; 
+}
+
+/* PROFILE */
+
+.profile-container {
+    margin: 4rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-age {
+    color: var(--FONT-COLOR);
+}
+
+.location-container {
+    margin: 0.8rem 0 2rem;
+}
+
+.location {
+    color: var(--DESCRIPTION-COLOR);
+    font-size: 0.8rem;
+}
+
+.profile-name {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+}
+
+
+hr {
+    width: 100%;
+    opacity: .4;
+}
+
+/* PROFILE STATS */
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+    color: var(--FONT-COLOR);
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    margin: 0.3rem;
+    font-size: 0.6rem;
+    color: var(--DESCRIPTION-COLOR);
+    letter-spacing: 1px;
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

@@ -1,0 +1,2 @@
+Challenge from FrontendMentor coded by Alleared using HTML and CSS. Good practice with Flexbox and Grid.
+What I wish to know is if there a way to make the 2 middle cards a column without being inside a div. Because I imagine that this is the right way to do it. Any feedback is very welcome.

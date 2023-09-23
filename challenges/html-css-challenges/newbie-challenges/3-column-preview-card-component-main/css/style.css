@@ -1,0 +1,149 @@
+
+/* Google Font Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    background-color: lightgray;
+}
+
+/* CARDS MAIN STYLES */
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section {
+    height: 450px;
+    max-width: 310px;
+    min-width: 200px;
+    padding: 40px;
+    position: relative;
+    color: hsla(0, 0%, 100%, 0.75)
+}
+
+section button {
+    position: absolute;
+    bottom: 50px;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform:uppercase;
+    padding: 20px 0;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 25px;;
+}
+
+
+/* SEDAN CARD STYLE*/
+
+.sedans {
+    background-color: rgb(226, 133, 37);
+    border-radius: 8px 0 0 8px;
+}
+
+.sedans button {
+    color: rgb(226, 133, 37);
+}
+
+.sedans button:hover, button:focus {
+    background-color: rgb(226, 133, 37);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+/* SUVs CARD STYLE*/
+
+.suvs {
+    background-color: rgb(1, 105, 114);
+}
+
+.suvs button {
+    color: rgb(1, 105, 114);
+}
+
+.suvs button:hover, button:focus {
+    background-color: rgb(1, 105, 114);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+/* LUXURY CARD STYLE */
+
+.luxury {
+    background-color: rgb(0, 64, 63);
+    border-radius: 0 8px 8px 0;
+}
+
+.luxury button {
+    color: rgb(0, 64, 63);
+}
+
+.luxury button:hover, button:focus {
+    background-color: rgb(0, 64, 63);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+/* MOBILE VERSION */
+
+@media (max-width: 600px) {
+
+    /* CARD MAIN STYLES */
+
+    body {
+        background-color: gray;
+    }
+
+    article {
+        display: grid;
+        padding: 20px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* SEDAN CARD STYLE*/
+
+    .sedans {
+        border-radius: 8px 8px 0 0;
+    }
+
+    /* LUXURY CARD STYLE */
+
+    .luxury {
+    border-radius: 0 0 8px 8px;
+    }
+
+}
+
+
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }

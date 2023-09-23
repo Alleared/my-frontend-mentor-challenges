@@ -1,0 +1,174 @@
+
+/* GOOGLE FONT IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+
+    /* COLORS */
+    --FONT-COLOR: hsl(234, 12%, 34%);
+    --DARK-GRAY-COLOR: hsl(229, 6%, 66%);
+    --CYAN-COLOR: hsl(180, 62%, 55%);
+    --RED-COLOR: hsl(0, 78%, 62%);
+    --ORANGE-COLOR: hsl(34, 97%, 64%);
+    --BLUE-COLOR: hsl(212, 86%, 64%);
+    --WHITE-COLOR: rgb(255, 255, 255);
+
+    /* GAP */
+    --GAP-MARGIN: 1.25rem;
+
+    /* PADDING */
+    --TWO-REM-PADDING: 2rem;
+    --ONE-REM-PADDING: 1rem;
+
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    gap: 3rem;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+article {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    gap: var(--GAP-MARGIN);
+}
+
+.header {
+    display: grid;
+    place-content: center;
+    background-color: var(--WHITE-COLOR);
+    text-align: center;
+}
+
+.header-container {
+    width: 30.125rem;
+}
+
+.header-container h1, .header-container h2 {
+    color: var(--FONT-COLOR);
+}
+
+.header-container h1 {
+    font-weight: 200;
+    font-size: 1.8rem;
+}
+
+.header-container h2 {
+    font-size: var(--TWO-REM-PADDING);
+}
+
+.header-container p {
+    color: var(--DARK-GRAY-COLOR);
+    font-size: var(--ONE-REM-PADDING);
+}
+
+.card {
+    width: 18.75rem;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.middle-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--GAP-MARGIN);
+}
+
+hr {
+    height: 3px;
+    border: none;
+    border-radius: 2px;
+}
+
+.supervisor hr {
+    background-color: var(--CYAN-COLOR);
+}
+
+.team-builder hr {
+    background-color: var(--RED-COLOR);
+}
+
+.karma hr {
+    background-color: var(--ORANGE-COLOR);
+}
+
+.calculator hr {
+    background-color: var(--BLUE-COLOR);
+}
+
+h2 {
+    font-size: var(--ONE-REM-PADDING);
+    margin: .3rem 0;
+}
+
+.card-description {
+    margin: var(--ONE-REM-PADDING) var(--ONE-REM-PADDING) var(--TWO-REM-PADDING);
+}
+
+.card-description p {
+    font-size: .7rem;
+    color: var(--DARK-GRAY-COLOR);
+}
+
+.icon-div {
+    display: flex;
+    justify-content: end;
+    padding: 0 var(--ONE-REM-PADDING) 1.5rem;
+}
+
+.icon-div img {
+    width: 40px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 800px) {
+
+    body {
+        background-color: rgb(236, 233, 216);
+        gap: 0;
+    }
+
+    .header {
+        background-color: var(--WHITE-COLOR);
+        padding: var(--TWO-REM-PADDING) 0;
+    }
+
+    .header-container {
+        width: 350px;
+    }
+    
+    article {
+        padding: var(--TWO-REM-PADDING) 0;
+        margin: 0;
+        width: 500px;
+        background-color: var(--WHITE-COLOR);
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

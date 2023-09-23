@@ -1,0 +1,1 @@
+Challenge from FrontendMentor. The background was the most difficult thing in this project for me. I couldn't figure out a better way to do it.

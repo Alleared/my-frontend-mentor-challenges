@@ -1,0 +1,118 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+    
+    /* COLORS */
+
+    --DARK-CYAN: hsl(185, 75%, 39%);
+    --VERY-DARK-DESATURATED-BLUE: hsl(229, 23%, 23%);
+    --DARK-GRAYISH-BLUE: hsl(227, 10%, 46%);
+    --WHITE-COLOR: rgb(255, 255, 255);
+
+    /* BORDER-RADIUS */
+    --BORDER-RADIUS: 15px;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-size: 1.125rem;
+    
+    background-color: var(--DARK-CYAN);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+article {
+
+    width: 400px;
+    background-color: var(--WHITE-COLOR);
+    border-radius: var(--BORDER-RADIUS);
+    position: relative;
+    margin: 2rem;
+
+}
+
+.card-background {
+    border-radius: var(--BORDER-RADIUS) var(--BORDER-RADIUS) 0 0;
+    width: 100%;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    border: 6px solid var(--WHITE-COLOR);
+    position: absolute;
+    left: 36%;
+    top: 22%;
+}
+
+h1, h2 {
+    color: var(--VERY-DARK-DESATURATED-BLUE);
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 2rem 0 3rem;
+}
+
+.title-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin: 3rem 0 1rem;
+}
+
+.location-div p {
+    color: var(--DARK-GRAYISH-BLUE);
+}
+
+.status-container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+hr {
+    
+    opacity: .4;
+}
+
+.status-div {
+    text-align: center;
+}
+
+.sub-stat {
+    color: var(--DARK-GRAYISH-BLUE);
+    font-size: .8rem;
+}
+
+.age {
+    font-size: 1.8rem;
+    color: var(--DARK-GRAYISH-BLUE);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* right 50vw top 50vh, left 50vw bottom 50vh; */
